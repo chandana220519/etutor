@@ -1,0 +1,121 @@
+<%-- 
+    Document   : loginpage
+    Created on : 28 Apr, 2023, 3:13:29 PM
+    Author     : dell
+--%>
+
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <style>
+        body{
+                display: flex;
+                justify-content:center;
+                align-items:center;
+                min-height: 100vh;
+                background: url('eduu.jpg')no-repeat;
+                background-size: cover;
+                background-position:center;
+                color: white;
+            }
+     
+            
+            .header
+            {
+                                  
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 90%;
+                padding: 20px 100px;
+                
+                display: flex;
+                justify-content:space-between;
+                align-items:center;
+                z-index: 99;
+            }
+            
+            .logo
+            {
+                font-size: 2em;
+                color: white;
+                user-select:none;
+            }
+              
+        
+        .container
+            {
+                padding: 50px;
+                background-color: transparent;
+                color: white;
+            }
+            
+            
+            
+              .button
+            {
+                width:130px;
+                height: 50px;
+                background: transparent;
+                border: 2px solid white;
+                outline: auto;
+                border-radius: 6px;
+                cursor: pointer;
+                font-size: 1.1em;
+                color: blue;
+                font-weight: 500;
+                margin-left: 40px;
+                transition: .5s;
+                
+            }
+            
+            
+            .button:hover{
+                background-color: blue;
+                color: white;
+                
+            }
+            
+              
+            
+            
+            
+            
+            
+      
+            
+            
+        </style>
+        
+    </head>
+    <body>
+        <div class="container"> 
+            <center><h1>USER LOGIN</h1></center><hr>
+    
+    
+    
+     
+    <h1>
+      <form action="userlogindb.jsp" method="post">
+        <label for="Username">Username:&nbsp;&nbsp;&nbsp;&nbsp;</label><input type="name" name="username" required><br><br></th>
+            
+                
+                    
+        <label for="password">Password:&nbsp;&nbsp;&nbsp;&nbsp;</label><input type="password" name="password" required><br><br>
+        
+       
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;<input type="submit" value="Login"> </form>
+       
+       
+         
+              
+                        <center>  <br><a href="userreg.jsp">_New Registeration_</a> </center>
+                       
+       
+           </h1>     
+       
+        </div>
+    </body>
+</html>
